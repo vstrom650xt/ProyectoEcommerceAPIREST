@@ -8,12 +8,8 @@ import com.google.firebase.cloud.FirestoreClient;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserService {
+public class UserService   {
 
-//    public  String addUser(DTOUser user){
-//        Firestore dbFirestore = FirestoreClient.getFirestore();
-//        //ApiFuture<WriteResult> collectionsApiFuture = dbFirestore.collection("usuario").document(user.toString());
-//
-//    }
+
 
 }
