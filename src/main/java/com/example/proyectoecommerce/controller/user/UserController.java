@@ -32,13 +32,18 @@ public class UserController {
         return userServiceAPI.get(id);
     }
 
+    /*
+     * Id de firebase Auto
+     * */
     @PostMapping(value = "/save/")
     public ResponseEntity<String> save(@RequestBody User user) throws Exception {
         userServiceAPI.save(user);
         return new ResponseEntity<String>(HttpStatus.OK);
     }
 
-
+    /*
+    * Permite definer el id
+    * */
     @PostMapping(value = "/save/{id}")
     public ResponseEntity<String> saveWithID(@RequestBody User user, @PathVariable String id) throws Exception {
         if (id == null || id.length() == 0 || id.equals("null")) {
