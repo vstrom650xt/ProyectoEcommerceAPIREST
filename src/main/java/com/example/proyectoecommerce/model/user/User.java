@@ -7,14 +7,9 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
-
-
-public class DTOUser {
-
-    private Long id;
+public class User {
     private String name;
     private String lastName;
     private String Addres;
-
 
 }
