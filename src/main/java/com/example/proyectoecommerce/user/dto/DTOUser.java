@@ -13,7 +13,7 @@ import java.util.Date;
 
 public class DTOUser {
 
-    private Long id;
+    private String id;
     private String name;
     private String email;
     private String address;

@@ -1,12 +1,9 @@
-package com.example.proyectoecommerce.controller.user;
+package com.example.proyectoecommerce.user.controller;
 
-import com.example.proyectoecommerce.model.user.User;
-import com.example.proyectoecommerce.service.user.api.UserServiceAPI;
+import com.example.proyectoecommerce.user.model.User;
+import com.example.proyectoecommerce.user.service.api.UserServiceAPI;
 
 import com.example.proyectoecommerce.user.dto.DTOUser;
-import com.google.api.core.ApiFuture;
-import com.google.cloud.firestore.DocumentReference;
-import com.google.cloud.firestore.WriteResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -64,7 +64,7 @@ public abstract class GenericServiceImpl<I, O> implements GenericServiceAPI<I, O
         List<QueryDocumentSnapshot> documents = query.get().getDocuments();
         for (QueryDocumentSnapshot doc : documents) {
             O object = doc.toObject(clazz);
-           // PropertyUtils.setProperty(object, "id", doc.getId());
+            PropertyUtils.setProperty(object, "id", doc.getId());
             result.add(object);
         }
         return result;

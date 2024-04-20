@@ -1,4 +1,4 @@
-package com.example.proyectoecommerce.model.user;
+package com.example.proyectoecommerce.user.model;
 
 import lombok.*;
 

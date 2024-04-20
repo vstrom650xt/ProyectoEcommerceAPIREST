@@ -1,4 +1,4 @@
-package com.example.proyectoecommerce.repository.user;
+package com.example.proyectoecommerce.user.repository;
 
 import com.example.proyectoecommerce.user.dto.DTOUser;
 import org.springframework.stereotype.Repository;

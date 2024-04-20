@@ -1,9 +1,8 @@
-package com.example.proyectoecommerce.service.user.impl;
+package com.example.proyectoecommerce.user.service.impl;
 
-import com.example.proyectoecommerce.commons.GenericServiceAPI;
 import com.example.proyectoecommerce.commons.GenericServiceImpl;
-import com.example.proyectoecommerce.model.user.User;
-import com.example.proyectoecommerce.service.user.api.UserServiceAPI;
+import com.example.proyectoecommerce.user.model.User;
+import com.example.proyectoecommerce.user.service.api.UserServiceAPI;
 import com.example.proyectoecommerce.user.dto.DTOUser;
 import com.google.cloud.firestore.CollectionReference;
 import com.google.cloud.firestore.Firestore;

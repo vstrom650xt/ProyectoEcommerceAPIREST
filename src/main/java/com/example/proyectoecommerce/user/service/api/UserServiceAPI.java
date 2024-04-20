@@ -1,7 +1,7 @@
-package com.example.proyectoecommerce.service.user.api;
+package com.example.proyectoecommerce.user.service.api;
 
 import com.example.proyectoecommerce.commons.GenericServiceAPI;
-import com.example.proyectoecommerce.model.user.User;
+import com.example.proyectoecommerce.user.model.User;
 import com.example.proyectoecommerce.user.dto.DTOUser;
 
 
