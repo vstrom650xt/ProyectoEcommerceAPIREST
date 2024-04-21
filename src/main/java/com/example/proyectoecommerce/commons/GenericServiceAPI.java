@@ -1,8 +1,11 @@
 package com.example.proyectoecommerce.commons;
 
 
+import com.example.proyectoecommerce.product.dto.DTOProduct;
+
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public interface GenericServiceAPI<I,O> {
 
@@ -17,4 +20,6 @@ public interface GenericServiceAPI<I,O> {
     Map<String, Object> getAsMap(String id) throws Exception;
 
     List<O> getAll() throws Exception;
+
+
 }

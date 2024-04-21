@@ -35,7 +35,7 @@ public class CategoryController {
     @PostMapping(value = "/save/")
     public ResponseEntity<String> save(@RequestBody Category category) throws Exception {
         categoryServiceAPI.save(category);
-        return new ResponseEntity<String>(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
 
@@ -46,7 +46,7 @@ public class CategoryController {
         } else {
             categoryServiceAPI.save(category, id);
         }
-        return new ResponseEntity<String>(id, HttpStatus.OK);
+        return new ResponseEntity<>(id, HttpStatus.OK);
     }
 
     @GetMapping(value = "/delete/{id}")
@@ -55,9 +55,9 @@ public class CategoryController {
         if (category != null) {
             categoryServiceAPI.delete(id);
         } else {
-            return new ResponseEntity<DTOCategory>(HttpStatus.NO_CONTENT);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
 
-        return new ResponseEntity<DTOCategory>(category, HttpStatus.OK);
+        return new ResponseEntity<>(category, HttpStatus.OK);
     }
 }
