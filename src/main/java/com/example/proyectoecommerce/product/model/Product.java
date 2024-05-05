@@ -12,12 +12,12 @@ import lombok.*;
 public class Product {
     
     private String nombre;
-    private String imageUrl;
+    private String url;
     private double precio;
     private String descripcion;
-    private boolean esMasVendido;
-    private String status;
+    private boolean masVendido;
     private String marca;
+    private String categoria;
 
 
 }

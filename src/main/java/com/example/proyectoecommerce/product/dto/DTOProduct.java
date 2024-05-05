@@ -9,18 +9,16 @@ import java.util.Objects;
 @Getter
 @Setter
 @ToString
-
-
 public class DTOProduct {
 
     private String id;
     private String nombre;
-    private String imageUrl;
+    private String url;
     private double precio;
     private String descripcion;
-    private boolean esMasVendido;
-    private String status;
+    private boolean masVendido;
     private String marca;
+    private String categoria;
 
     public DTOProduct(String marca) {
         this.marca= marca;

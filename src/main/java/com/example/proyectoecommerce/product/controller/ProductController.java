@@ -30,6 +30,12 @@ public class ProductController {
     }
 
 
+    @GetMapping(value = "/getMostSold")
+    public List<DTOProduct> getMostSold() throws Exception {
+        return productServiceAPI.getMostSold();
+    }
+
+
     @GetMapping(value = "/find/{id}")
     public DTOProduct find(@PathVariable String id) throws Exception {
         return productServiceAPI.get(id);
@@ -63,4 +69,35 @@ public class ProductController {
 
         return new ResponseEntity<>(category, HttpStatus.OK);
     }
+    @GetMapping(value = "/getProductByCategory/{id}")
+    public ResponseEntity<List<Product>> getProductByCategory(@PathVariable String id) {
+        try {
+            List<Product> products = productServiceAPI.getProductsByCategory(id);
+            return new ResponseEntity<>(products, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping("/getProductByBrand/{brand}")
+    public ResponseEntity<List<Product>> getProductsByBrand(@PathVariable String brand) {
+        try {
+            List<Product> products = productServiceAPI.getProductsByBrand(brand);
+            if (products.isEmpty()) {
+                return ResponseEntity.noContent().build();
+            }
+            return ResponseEntity.ok(products);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+
+
+//    @GetMapping(value = "/search")
+//    public List<DTOProduct> search(@RequestParam String searchTerm) throws Exception {
+//        return productServiceAPI.searchProducts(searchTerm);
+//    }
+//
+
+
 }
