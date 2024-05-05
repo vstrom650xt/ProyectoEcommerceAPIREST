@@ -69,7 +69,7 @@ public class ProductController {
 
         return new ResponseEntity<>(category, HttpStatus.OK);
     }
-    @GetMapping(value = "/getProductByCategory/{id}")
+     @GetMapping(value = "/getProductByCategory/{id}")
     public ResponseEntity<List<Product>> getProductByCategory(@PathVariable String id) {
         try {
             List<Product> products = productServiceAPI.getProductsByCategory(id);
