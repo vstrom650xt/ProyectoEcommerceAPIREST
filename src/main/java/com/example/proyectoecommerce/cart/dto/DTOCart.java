@@ -1,6 +1,9 @@
 package com.example.proyectoecommerce.cart.dto;
 
+import com.example.proyectoecommerce.product.model.Product;
 import lombok.*;
+
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -9,11 +12,11 @@ import lombok.*;
 @ToString
 
 
-public class DTOCategory {
+public class DTOCart {
 
     private String id;
-    private String name;
-    private String url;
+    private List<Product> productList;
+
 
 
 

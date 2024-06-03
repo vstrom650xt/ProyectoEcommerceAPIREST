@@ -9,10 +9,10 @@ import java.util.concurrent.ExecutionException;
 
 @Repository
 public interface CategoryRepository {
-    DTOCategory createCategory(DTOCategory user);
-
-    List<DTOCategory> getAllUsers() throws InterruptedException, ExecutionException;
-    DTOCategory getUserById(String id) throws InterruptedException, ExecutionException;
-    DTOCategory updateUser(String id, DTOCategory user) throws InterruptedException, ExecutionException;
-    void deleteUser(String id) throws InterruptedException, ExecutionException;
+//    DTOCategory createCategory(DTOCategory user);
+//
+//    List<DTOCategory> getAllUsers() throws InterruptedException, ExecutionException;
+//    DTOCategory getUserById(String id) throws InterruptedException, ExecutionException;
+//    DTOCategory updateUser(String id, DTOCategory user) throws InterruptedException, ExecutionException;
+//    void deleteUser(String id) throws InterruptedException, ExecutionException;
 }
